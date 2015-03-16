@@ -304,7 +304,7 @@ cv::name(xMat, yMat, resultMat);\
 		Mat srcMat = toCv(src), dstMat = toCv(dst);
 		int w = srcMat.cols;
 		int h = srcMat.rows;
-		vector<Point2f> srcPoints(4);
+        vector<cv::Point2f> srcPoints(4);
 		srcPoints[0] = cv::Point2f(0, 0);
 		srcPoints[1] = cv::Point2f(w, 0);
 		srcPoints[2] = cv::Point2f(w, h);
@@ -319,7 +319,7 @@ cv::name(xMat, yMat, resultMat);\
 		Mat srcMat = toCv(src), dstMat = toCv(dst);
 		int w = dstMat.cols;
 		int h = dstMat.rows;
-		vector<Point2f> dstPoints(4);
+		vector<cv::Point2f> dstPoints(4);
 		dstPoints[0] = cv::Point2f(0, 0);
 		dstPoints[1] = cv::Point2f(w, 0);
 		dstPoints[2] = cv::Point2f(w, h);
